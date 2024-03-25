@@ -109,6 +109,16 @@ a {
 .sub-heading {
   font-weight: var(--fw-sub-heading);
 }
+
+.button {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-neutral-2);
+  padding: 15px 50px;
+  border-radius: 40px;
+  margin-bottom: 80px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
 .container {
   padding-inline: 15px;
   margin-inline: auto;
@@ -187,15 +197,6 @@ a {
 .landing p {
   max-width: 471px;
   margin-bottom: 16px;
-}
-
-.landing a {
-  background-color: var(--clr-primary-1);
-  color: var(--clr-neutral-2);
-  padding: 15px 50px;
-  border-radius: 40px;
-  margin-bottom: 80px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .landing a:hover,
