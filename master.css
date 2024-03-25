@@ -1,21 +1,3 @@
-/* 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 800
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-*/
 
 :root {
   --clr-primary-1: hsl(322, 100%, 66%);
@@ -112,6 +94,21 @@ a {
   text-decoration: none;
 }
 
+* {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-body);
+  color: var(--clr-neutral-1);
+}
+
+.heading {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+  margin-bottom: 16px;
+}
+
+.sub-heading {
+  font-weight: var(--fw-sub-heading);
+}
 .container {
   padding-inline: 15px;
   margin-inline: auto;
@@ -137,6 +134,16 @@ a {
 
 /* header */
 
+.header {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 50px;
+  }
+}
+
 .header .container {
   padding-block: 50px;
   display: flex;
@@ -160,9 +167,44 @@ a {
   transition: 0.3s;
 }
 
-.header .container a:hover {
+.header .container a:hover, 
+.header .container a:focus {
   color: var(--clr-primary-2);
   border-color: var(--clr-primary-2);
 }
 
 /* header */
+
+/* landing */
+
+.landing .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.landing p {
+  max-width: 471px;
+  margin-bottom: 16px;
+}
+
+.landing a {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-neutral-2);
+  padding: 15px 50px;
+  border-radius: 40px;
+  margin-bottom: 80px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.landing a:hover,
+.landing a:focus {
+  background-color: var(--clr-primary-2);
+}
+
+.landing img {
+  width: 700px;
+}
+
+/* landing */
