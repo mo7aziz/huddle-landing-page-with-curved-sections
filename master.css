@@ -93,7 +93,7 @@ select {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
@@ -106,7 +106,7 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 a {
   text-decoration: none;
@@ -134,3 +134,35 @@ a {
     width: 1170px;
   }
 }
+
+/* header */
+
+.header .container {
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width:481px) {
+  .header .container img {
+    width: 140px;
+  }
+}
+
+.header .container a {
+  font-family: var(--ff-body);
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+  border: 1px solid var(--clr-primary-1);
+  border-radius: 25px;
+  padding: 7.5px 30px;
+  transition: 0.3s;
+}
+
+.header .container a:hover {
+  color: var(--clr-primary-2);
+  border-color: var(--clr-primary-2);
+}
+
+/* header */
