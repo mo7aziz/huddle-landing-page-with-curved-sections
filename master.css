@@ -124,6 +124,10 @@ a {
   margin-inline: auto;
 }
 
+.section-margin {
+    margin-bottom: 100px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -143,16 +147,6 @@ a {
 }
 
 /* header */
-
-.header {
-  margin-bottom: 100px;
-}
-
-@media (max-width: 768px) {
-  .header {
-    margin-bottom: 50px;
-  }
-}
 
 .header .container {
   padding-block: 50px;
@@ -209,3 +203,30 @@ a {
 }
 
 /* landing */
+
+/* statics */
+
+.statics .container {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  justify-content: center;
+  gap: 150px;
+}
+
+@media (max-width: 768px) {
+  .statics .container {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+
+.statics .stat h1 {
+  font-size: 75px;
+  margin-bottom: 0;
+}
+
+.statics .stat p {
+  color: hsla(192, 100%, 9%, 0.65);
+}
+
+/* statics */
