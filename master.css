@@ -100,14 +100,10 @@ a {
   color: var(--clr-neutral-1);
 }
 
-.heading {
+h1 {
   font-family: var(--ff-heading);
   font-weight: var(--fw-heading);
   margin-bottom: 16px;
-}
-
-.sub-heading {
-  font-weight: var(--fw-sub-heading);
 }
 
 .button {
@@ -117,6 +113,41 @@ a {
   border-radius: 40px;
   margin-bottom: 80px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.right-image-left-text-layout,
+.left-image-right-text-layout {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.right-image-left-text-layout {
+  flex-direction: row-reverse;
+}
+
+.right-image-left-text-layout .text,
+.right-image-left-text-layout > img,
+.left-image-right-text-layout .text,
+.left-image-right-text-layout > img {
+  flex: 1 1 0;
+  width: 0;
+}
+
+@media (max-width: 768px) {
+  .right-image-left-text-layout,
+  .left-image-right-text-layout {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-image-left-text-layout .text,
+  .right-image-left-text-layout > img,
+  .left-image-right-text-layout .text,
+  .left-image-right-text-layout > img {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .container {
@@ -230,3 +261,7 @@ a {
 }
 
 /* statics */
+
+/* sections */
+
+/* sections */
