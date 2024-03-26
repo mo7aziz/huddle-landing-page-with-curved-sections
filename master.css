@@ -109,10 +109,16 @@ h1 {
 .button {
   background-color: var(--clr-primary-1);
   color: var(--clr-neutral-2);
+  font-weight: var(--fw-sub-heading);
   padding: 15px 50px;
   border-radius: 40px;
   margin-bottom: 80px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--clr-primary-2);
 }
 
 .right-image-left-text-layout,
@@ -228,11 +234,6 @@ h1 {
   margin-bottom: 16px;
 }
 
-.landing a:hover,
-.landing a:focus {
-  background-color: var(--clr-primary-2);
-}
-
 .landing img {
   width: 700px;
 }
@@ -336,4 +337,18 @@ h1 {
   }
 }
 
-/* sections */
+/* features */
+
+/* get started */
+
+.get-started .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-started a {
+  margin-bottom: 0;
+}
+
+/* get started */
